@@ -1,0 +1,106 @@
+.resume {
+    height: 100%;
+    min-height: 100vh;
+    background: var(--bg-color-sec);
+}
+
+.resume h1 {
+    padding-bottom: 25px;
+    line-height: 1;
+    color: var(--h1-color);
+
+    border-bottom: 2px solid var(--border-color);
+}
+
+.resume section {
+    margin: 30px 0;
+}
+
+
+
+
+
+
+.education ul,
+.languages ul {
+    /* border-left: 1px solid #298655; */
+}
+
+.education ul li,
+.languages ul li {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 16px;
+    position: relative;
+}
+
+.education ul li::after,
+.languages ul li::after {
+    content: '';
+    display: block;
+    position: absolute;
+
+    top: 11px;
+    left: -5px;
+    width: 9px;
+
+    height: 9px;
+    border-radius: 50%;
+    background: #298655;
+}
+
+.education ul li span,
+.languages ul li span {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    color: var(--span-color);
+}
+
+
+.education ul li strong,
+.languages ul li strong {
+    margin-top: 8px;
+    font-size: 17px;
+    color: var(--strong-color);
+}
+
+.education ul li p,
+.languages ul li p {
+    margin-top: 10px;
+    line-height: 30px;
+    color: var(--p-color);
+}
+
+
+
+
+
+/* @media screen and (max-width:767px) {} */
+
+@media screen and (min-width:768px) {
+    .resume {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:993px) {
+    .resume {
+        width: 100%;
+    }
+
+    .secs {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secs section {
+        width: 45%;
+        margin-top: 60px;
+    }
+}
+
+/* @media screen and (min-width:1201px) {} */

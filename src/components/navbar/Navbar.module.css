@@ -1,0 +1,316 @@
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #298655;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #47a4daa9;
+}
+
+.theme {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    font-size: 22px;
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.theme svg {
+    color: var(--p-color);
+}
+
+
+
+
+
+
+.nav {
+    background: var(--bg-color-sec);
+    box-shadow: var(--box-shadow);
+    color: var(--p-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    position: fixed;
+    width: 250px;
+
+    top: 62px;
+    right: -305px;
+    z-index: 55;
+
+    text-align: center;
+    padding: 50px 10px;
+    height: calc(100vh - 62px);
+
+    overflow: auto;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+
+
+
+
+.profile {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #c0c0c0;
+
+    border-radius: 50%;
+    margin-top: 120px;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.nav h2 {
+    margin: 20px 0;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+    font-size: 20px;
+}
+
+
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials li a {
+    display: block;
+    color: var(--p-color);
+    transition: .4s;
+}
+
+.socials li a:hover {
+    color: #298655;
+}
+
+
+
+/* .menu */
+.menu li {
+    margin: 20px 0;
+}
+
+.menu li a {
+    color: var(--p-color);
+    font-size: 16px;
+    transition: .4s;
+}
+
+.menu li a:hover {
+    color: #298655;
+}
+
+.active {
+    color: #298655 !important;
+}
+
+
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.btns button {
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+
+    border: 2px solid #444;
+    border-radius: 50%;
+    cursor: pointer;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: center;
+
+    transition: .4s;
+}
+
+.btns button:hover {
+    border: 2px solid #c0c0c0;
+}
+.btns button:nth-of-type(2) {
+    background-image: url('../../assets/icons/usa-flag.svg');
+}
+.btns button:nth-of-type(1) {
+    background-image: url('../../assets/icons/cr-flag.svg');
+}
+
+
+
+/* menu in mobile and Tablet */
+.menuTM {
+    width: 100%;
+    height: 62px;
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    z-index: 20;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 15px;
+    background: var(--bg-color-sec);
+    box-shadow: var(--box-shadow-menuTM);
+
+}
+
+.menuTM img {
+    border-radius: 50%;
+}
+
+.menuTM ul {
+    cursor: pointer;
+}
+
+.menuTM ul li {
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+
+    transform-origin: 4px;
+    transition: all 0.3s linear;
+    background: #298655;
+
+    margin-bottom: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cssRight {
+    top: 0;
+    right: 0;
+    width: 50%;
+
+    height: 100%;
+    /* animation: animRight 1s ease 0s 1 normal forwards; */
+    /* transition: 1s !important; */
+}
+
+.cssLeft {
+    top: 0;
+    left: 0;
+    height: 100%;
+
+    /* animation: animLeft 1s ease 0s 1 normal forwards; */
+    /* transition: 1s !important; */
+}
+
+
+
+
+@keyframes animLeft {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: 75%;
+    }
+}
+
+
+@keyframes animRight {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+/* @media screen and (max-width:767px){} */
+/* @media screen and (min-width:768px){} */
+
+@media screen and (min-width:993px) {
+
+
+
+    .menuTM {
+        display: none;
+    }
+
+    .nav {
+        height: 100%;
+    }
+
+    .profile {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    .cssLeft {
+        width: 25%;
+        /* animation: animLeft 1s ease 0s 1 normal forwards; */
+    }
+
+    .cssRight {
+        /* animation: animRight 1s ease 0s 1 normal forwards; */
+    }
+}
+
+@media screen and (min-width:1201px) {
+
+    .cssLeft {
+        /* animation: animLeft 1s ease 0s 1 normal forwards; */
+    }
+
+}
