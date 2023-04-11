@@ -3,7 +3,6 @@ import { i18n } from "./i18n";
 import Layout from "./components/Layout";
 
 import styled from "styled-components";
-import { ToastContainer } from "react-toastify";
 
 const App = () => {
   const [language, setLanguage] = useState("fa");
@@ -17,7 +16,7 @@ const App = () => {
     <CommonStyles language={language}>
       <div className="App">
         <Layout handleOnclick={handleOnclick} />
-        {/* <ToastContainer rtl={language === "fa" ? true : false} /> */} //use this feature RTL if we are using arab hebrew and other languages
+        {/* <ToastContainer rtl={language === "fa" ? true : false} /> */} 
       </div>
     </CommonStyles>
   );

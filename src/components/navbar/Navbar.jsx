@@ -146,7 +146,7 @@ const Navbar = ({ handleOnclick, location }) => {
 
             <figure className={styles.profile}>
               <img
-                src="https://i.postimg.cc/dt0mXYTx/avatar.jpg"
+                src="https://i.postimg.cc/B6xY8N1r/Avatar-Maker.png"
                 alt="profile"
               />
             </figure>
